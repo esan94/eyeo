@@ -1,0 +1,344 @@
+body {
+    display: flex;
+    height: 100%;
+    background-color: #282822;
+    font-family: "Martian Mono", Times, serif;
+}
+
+header {
+    flex: 0 0 300px; /* Ancho de la barra de navegación */
+    padding-top: 0px;
+    top: 0;
+}
+
+h1 {
+    position: relative;
+    padding-bottom: 16px;
+    color: #a4ceee;
+}
+
+supmain {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+main {
+    position: relative;
+    flex: 1;
+    padding: 24px;
+    padding-top: 124px;
+    padding-bottom: 16px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+    header {
+        width: 100%; /* La barra de navegación toma el ancho completo */
+        height: auto;
+    }
+    main {
+        order: 1;
+    }
+}
+
+.home {
+    display: flex;
+    color: #a7dbf7;
+    top: 0;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.dropbtn {
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px 30px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: static;
+    padding-left: 55px;
+    padding-bottom: 10%;
+    font-size: 12px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    margin: 0px 0px 15px 0px;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.keyword {
+    color: #00bff9;
+}
+
+.entity_name02 {
+    color: #82AAFF
+}
+
+.entity_name01 {
+    color: #d29ffc;
+}
+
+.aux01 {
+    color: #f7ecb5;
+}
+
+.string {
+    color: #bcf0c0;
+}
+
+.variable {
+    color: #a4ceee;
+}
+
+.quote {
+    color: #78bd65;
+}
+
+.code {
+    font-size: 12px;
+    padding-top: 35px;
+
+}
+#typewriter {
+    font-size: 80px;
+    color: #a7dbf7;
+    padding-top: 115px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animación del cursor */
+@keyframes blink {
+    50% { border-color: #a7dbf7; }
+}
+
+/* Aplicar la animación al cursor */
+#typewriter {
+    animation: blink 1s step-end infinite;
+}
+
+.card-container {
+    position: relative;
+    z-index: 3;
+    width: 310px;
+    height: 340px;
+}
+
+.card-container-tech {
+    position: relative;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+}
+
+.tech-path-card {
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 4px 4px 0px 4px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #282822;
+}
+
+.career-path-card {
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 4px 4px 0px 4px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #282822;
+}
+.career-path-card-back {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: -10px;
+    bottom: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    z-index: -1;
+    border: 2px solid #282822;
+}
+
+.header-card {
+    background-color: #282822;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 8px 8px 0px 0px; /* Redondea las esquinas superiores */
+}
+
+.title-card {
+    padding: 24px 8px 8px;
+    color: #282822;
+    font-weight: 300;
+}
+
+.image-card {
+    display: flex; /* Esto hace que el contenedor sea un contenedor flex */
+    justify-content: center; /* Esto centra la imagen horizontalmente */
+    align-items: center; /* Esto centra la imagen verticalmente */
+    height: 100px; /* Establece una altura para el contenedor de la descripción */
+}
+
+.image-card img {
+    max-width: 100%; /* Esto asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 100%; /* Esto asegura que la imagen no sea más alta que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.footer-card {
+    padding: 10px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+
+.courses-card, .certificate-card, .beginner-friendly-card, .hours-card {
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.level-duration-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.beginner-friendly-card {
+    background-color: #dff0d8;
+}
+
+.hours-card {
+    background-color: #d9edf7;
+}
+
+.footer-fixed {
+    position: fixed; /* Posición fija en la ventana del navegador */
+    bottom: 0; /* Alineado al fondo */
+    left: 0; /* Alineado a la izquierda */
+    background-color: #10336248; /* Fondo semi-transparente negro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px; /* Espacio alrededor del texto */
+    font-size: 10px; /* Tamaño de fuente */
+    display: flex; /* Usa flexbox para alineación */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido, si deseas */
+    z-index: 1000; /* Asegúrate de que no sea cubierto por otros elementos */
+}
+
+.coffee {
+    display: inline-block; /* Para alinear íconos y texto correctamente */
+    background-image: url('images/coffee-beans.png');
+    width: 25px; /* Ancho del logo */
+    height: 25px; /* Alto del logo */
+    background-size: contain; /* Asegura que el logo se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición del logo */
+    margin: 4px;
+}
+
+.heart {
+    display: inline-block; /* Para alinear íconos y texto correctamente */
+    background-image: url('images/heart.png'); /* Ruta al logo de ChatGPT */
+    width: 25px; /* Ancho del logo */
+    height: 25px; /* Alto del logo */
+    background-size: contain; /* Asegura que el logo se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición del logo */
+    margin: 4px;
+    margin-left: 8px;
+
+}
+
+/* Si tienes un logo real para ChatGPT y el café, 
+podrías querer usar imágenes en lugar de texto o emojis. Por ejemplo: */
+.logo {
+    display: inline-block; /* Para alinear íconos y texto correctamente */
+    background-image: url('images/chatgpt-logo.png'); /* Ruta al logo de ChatGPT */
+    width: 25px; /* Ancho del logo */
+    height: 25px; /* Alto del logo */
+    background-size: contain; /* Asegura que el logo se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición del logo */
+    margin: 4px;
+
+}
+
+.details {
+    position: relative;
+    width: 65%;
+    top: -340px;
+    left: 420px;
+    color: #FFFFFF;
+}
+.details::-webkit-scrollbar {
+    display: none;
+}
+
+.details .section {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-bottom: 2px solid #bcf0c0;
+}
+
+.details .text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+    line-height: 1.75em
+}
+
+button {
+    /* Estilos para tu botón */
+    padding: 10px 15px;
+    background-color: #f7ecb5;
+    color: #282822;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Martian Mono", Times, serif;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+button:hover {
+    background-color: #D9D1A8; /* Cambia de color al pasar el ratón por encima */
+}
