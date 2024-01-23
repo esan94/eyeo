@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MM";
-    src: url('/fonts/MartianMono-Regular.ttf') format("truetype");
+    src: url('./fonts/MartianMono-Regular.woff') format("woff"), url('./fonts/MartianMono-Regular.woff2') format("woff2");
     font-weight: normal;
     font-style: normal;
 }
