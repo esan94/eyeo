@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "MM";
+    src: url('/fonts/MartianMono-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: "Martian Mono", 'Courier New', Courier, monospace, sans-serif/* Usa tu fuente aquí */
+    font-family: "MM", 'Courier New', Courier, monospace, sans-serif/* Usa tu fuente aquí */
 }
 
 body {
