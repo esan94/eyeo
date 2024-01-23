@@ -1,8 +1,11 @@
+* {
+    font-family: "Martian Mono", 'Courier New', Courier, monospace, sans-serif/* Usa tu fuente aquí */
+}
+
 body {
     display: flex;
     height: 100%;
     background-color: #282822;
-    font-family: "Martian Mono", Times, serif;
 }
 
 header {
@@ -334,7 +337,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Martian Mono", Times, serif;
     font-weight: 600;
     font-size: 10px;
 }
